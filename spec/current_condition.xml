@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--This document is intended only for use by authorized licensees of The Weather Channel. Unauthorized use is prohibited. Copyright 1995-2005, The Weather Channel Interactive, Inc. All Rights Reserved.-->
+<weather ver="2.0">
+  <head>
+    <locale>en_US</locale>
+    <form>MEDIUM</form>
+    <ut>C</ut>
+    <ud>km</ud>
+    <us>km/h</us>
+    <up>mb</up>
+    <ur>mm</ur>
+  </head>
+  <loc id="ARTN0088">
+    <dnam>San Miguel de Tucuman, Argentina</dnam>
+    <tm>11:23 AM</tm>
+    <lat>-26.83</lat>
+    <lon>-65.21</lon>
+    <sunr>8:09 AM</sunr>
+    <suns>6:36 PM</suns>
+    <zone>-3</zone>
+  </loc>
+  <lnks type="prmo">
+    <link pos="1">
+      <l>http://www.weather.com/allergies?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link1&amp;cm_ite=Allergies</l>
+      <t>Local Pollen Reports</t>
+    </link>
+    <link pos="2">
+      <l>http://www.weather.com/flights?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link2&amp;cm_ite=BusinessTraveler</l>
+      <t>Airport Conditions</t>
+    </link>
+    <link pos="3">
+      <l>http://www.weather.com/garden?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link3&amp;cm_ite=Garden</l>
+      <t>Lawn and Garden Weather</t>
+    </link>
+    <link pos="4">
+      <l>http://www.weather.com/traffic?par=xoap&amp;site=textlink&amp;cm_ven=XOAP&amp;cm_cat=TextLink&amp;cm_pla=Link4&amp;cm_ite=Traffic</l>
+      <t>Rush Hour Traffic</t>
+    </link>
+  </lnks>
+  <cc>
+    <lsup>6/22/08 11:00 AM Local Time</lsup>
+    <obst>San Miguel de Tucuman, Argentina</obst>
+    <tmp>7</tmp>
+    <flik>5</flik>
+    <t>Partly Cloudy</t>
+    <icon>30</icon>
+    <bar>
+      <r>1026.1</r>
+      <d>steady</d>
+    </bar>
+    <wind>
+      <s>11</s>
+      <gust>N/A</gust>
+      <d>50</d>
+      <t>NE</t>
+    </wind>
+    <hmid>87</hmid>
+    <vis>6.0</vis>
+    <uv>
+      <i>2</i>
+      <t>Low</t>
+    </uv>
+    <dewp>5</dewp>
+    <moon>
+      <icon>18</icon>
+      <t>Waning Gibbous</t>
+    </moon>
+  </cc>
+</weather>
