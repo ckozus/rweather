@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = "This gems lets you access to the search and get current conditions features."
   s.has_rdoc = true
   s.authors  = ["Carlos Kozuszko"]
-  s.files    = Dir["lib/**/*.*"] + Dir["spec/**/*.*"]
+  s.files    = ["lib/r_weather.rb", "lib/r_weather_current_condition.rb", "spec/current_condition.xml", "spec/r_weather_current_condition_spec.rb"]
   s.rdoc_options = ["--main", "README"]
   s.extra_rdoc_files = ["README"]
   s.add_dependency("xml-simple", [">= 1.0.11"])
