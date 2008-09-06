@@ -20,7 +20,7 @@ class RWeather
   def self.key=(value); @@key = value; end
 
   def self.search(where)
-    if data = get_and_parse(sprintf(SEARCH_URL, where))
+    if data = get_and_parse(sprintf(SEARCH_URL, URI.encode(where)))
       data['loc'].map{|loc| RWeatherLocation.new(loc['type'], loc['id'], loc['content'])}
     end
   end
@@ -30,7 +30,7 @@ class RWeather
     url = sprintf(LOCAL_URL, location_id, partner_id, key)
     url << "&cc=true"
     url << "&unit=#{unit}" if VALID_UNITS.include?(unit)
-    if data = get_and_parse(url)
+    if data = get_and_parse(URI.encode(url))
       RWeatherCurrentCondition.parse(data)
     end
   end
