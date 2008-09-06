@@ -1,7 +1,7 @@
 require 'lib/r_weather_current_condition'
 require 'xmlsimple'
 
-describe RWeatherCurrentCondition do
+describe RWeatherCurrentCondition, 'parse' do
   
   before :each do
     file_data = File.open('spec/current_condition.xml', 'r') {|f| f.read}
