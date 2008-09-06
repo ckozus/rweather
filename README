@@ -2,3 +2,30 @@
 
 Ruby gem to access Weather Channel (weather.com) XML API.
 
+This gems lets you access to the search and get current conditions features. Forecast it's not implemented yet.
+
+In order to use the API you will need first to get your partner_id and licence key from weather.com at this address:
+http://www.weather.com/services/xmloap.html
+
+Sign up, enter all your data and you'll get an email with the partner_id, licence key and a link to download the SDK info.
+If you need to read the license agreement and the API doc you can do it here:
+http://download.weather.com/web/xml/sdk.zip
+
+== Example
+
+  require 'rubygems'
+  require 'r_weather'
+
+  RWeather.partner_id = "xxxxxxxxxx"
+  RWeather.key = "yyyyyyyyyyyyyyyy"
+
+  locations = RWeather.search('tucuman') # that's where I'm from :)
+  unless locations.empty?
+    locations.each_with_index do |location, i|
+      puts "#{i}) #{location.id} - #{location.name}"
+    end
+    cc = RWeather.current_conditions(locations.first.id)
+    puts "Current conditions: "
+    puts "  Temperature: #{cc.tmp}"
+    puts "  Feels like:  #{cc.flik}"
+  end
