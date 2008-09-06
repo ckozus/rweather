@@ -1,0 +1,3 @@
+* Write gemspec
+* Specify gem dependencies: xmlsimple
+* Write more detailed README.txt showing how to use the gem.
